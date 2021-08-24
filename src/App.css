@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.button {
+  border: 1px lightblue solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+ 
+}
+
+.buttonElementsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconLeft, .iconRight {
+  width: 20px;
+}
+
+.iconRight {
+  padding-left: 10px;
+  
+}
+
+.iconLeft {
+  padding-right: 10px;
+}
+
+.fa-sync-alt {
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+
+@keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
